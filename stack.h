@@ -6,7 +6,7 @@ typedef struct
     Vector v;
 } Stack;
 
-void stack_init(Stack *s, int capacity);
+void stack_init(Stack *s);
 void stack_push(Stack *s, int value);
 void stack_pop(Stack *s);
 int stack_top(Stack *s);

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "stack.h"
+#include "vector.c"
 
 void stack_destroy(Stack *s)
 {
@@ -37,7 +38,7 @@ void stack_display(Stack *s)
     }
     printf("\n");
 }
-void stack_init(Stack *s, int capacity)
+void stack_init(Stack *s)
 {
     vector_init(&s->v);
 }
